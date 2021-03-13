@@ -1,0 +1,62 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+    <h2 id="listing-title">{{ product.title }}</h2>
+    <img id="listing-image" class="card-img-top" src="{{product.link}}" alt="Card image cap">
+    <h6 id="listing-description">{{ product.description }}</h6>
+    <h6 id="listing-price">${{ product.startBid }}</h6>
+
+    {% if closed %}
+        <h3 id="closed">This listing is no longer active.</h3>
+        {% if won %}
+            <h3 id="won">Congrats! You won this listing.</h3>
+        {% endif %}
+    {% else %}
+        <form action="{% url 'viewListing' product.id %}" method="POST">
+            {% csrf_token %}
+            
+            <label id="your-bid">Your bid:</label>
+            <input id="bid-place" type="text" name="bid" required>
+            <button id="bid-place-button" type="submit">Place Bid</button>
+        </form>
+    {% endif %}
+
+    {% if message %}
+        {% if placed %}
+            <p id="good-message">{{ message }}</p>
+        {% else %}
+            <p id="bad-message">{{ message }}</p>
+        {% endif %}
+    {% endif %}
+
+    <h6 id="listing-category">Category : {{ product.category }}</h6>
+    <h6 id="listing-owner"> Owner : {{ product.owner }}</h6>
+
+    {% if onwatchlist %}
+        <a href="{% url 'removeWatchlist' product.id %}">Remove from Watchlist</a>
+    {% else %}
+        <a href="{% url 'addWatchlist' product.id %}">Add to Watchlist</a>
+    {% endif %}
+
+    {% if owner %}
+        <p><a href="{% url 'closeListing' product.id %}">Close the Listing</a></p>
+    {% endif %}
+
+    <p></p>
+
+    <form action="{% url 'addComment' product.id %}" method="POST">
+        {% csrf_token %}
+        <div>
+            <textarea id="type" type="text" name="comment" required></textarea>
+            <button id="add-comment" type="submit">Add comment</button>
+        </div>
+    </form>
+
+    {% for comment in comments %}
+        <hr>
+        <p id="commenter">{{ comment.user }}:</p>
+        <p id="comment">"{{ comment.comment }}"</p>
+    {% endfor %}
+
+{% endblock %}

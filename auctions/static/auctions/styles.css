@@ -1,0 +1,225 @@
+body {
+    padding: 10px;
+}
+
+#create-listing {
+  margin-left: 550px;
+}
+
+#title-create {
+  width: 700px;
+  padding-left: 10px;
+  margin-left: 550px;
+}
+
+#title-label {
+  margin-left: 550px;
+  margin-top: 30px;
+}
+
+#description-label {
+  margin-left: 550px;
+  margin-top: 30px;
+}
+
+#description {
+  width: 700px;
+  height: 150px;
+  padding-left: 10px;
+  margin-left: 550px;
+}
+
+#bid-label {
+  margin-left: 550px;
+  margin-top: 25px;
+}
+
+#bid {
+  width: 700px;
+  margin-left: 550px;
+  padding-left: 10px;
+}
+
+#url-label {
+  margin-left: 550px;
+  margin-top: 25px;
+}
+
+#url {
+  width: 700px;
+  padding-left: 10px;
+  margin-left: 550px;
+}
+
+#category-label {
+  margin-left: 550px;
+  margin-top: 25px;
+}
+
+#category {
+  width: 700px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 550px;
+}
+
+#save {
+  margin-left: 870px;
+  margin-top: 25px;
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#image {
+  margin-left: 50px;
+  width: 300px;
+  height: 200px;
+  float: left;
+  padding-right: 30px;
+  margin-bottom: 50px;
+}
+
+#product-title {
+  margin-top: 30px;
+  font-size: x-large;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+#product-description {
+  font-family: 'Courier New', Courier, monospace;
+  margin-right: 500px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#product-price {
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+}
+
+#product-category {
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+}
+
+#hr {
+  margin-top: 20px;
+}
+
+#listing-title {
+  margin-left: 50px;
+  margin-top: 30px;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+#listing-image {
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 600px;
+  height: 400px;
+  float: left;
+  padding-right: 30px;
+  margin-bottom: 50px;
+}
+
+#listing-description {
+  font-family: 'Courier New', Courier, monospace;
+  margin-right: 500px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#listing-price {
+  margin-top: 40px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: xx-large;
+}
+
+#your-bid {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#bid-place {
+  margin-left: 40px;
+}
+
+#bid-place-button {
+  margin-left: 40px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#listing-category {
+  padding-top: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#listing-owner {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#good-message {
+  font-family: 'Courier New', Courier, monospace;
+  color: green;
+}
+
+#bad-message {
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+}
+
+#watchlist-message {
+  font-family: 'Courier New', Courier, monospace;
+  color: green;
+  margin-left: 50px;
+}
+
+#closed {
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+}
+
+#won {
+  font-family: 'Courier New', Courier, monospace;
+  color: green;
+}
+
+#type {
+  margin-top: 30px;
+  width: 700px;
+  height: 75px;
+}
+
+#add-comment {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+}
+
+#commenter {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  margin-left: 50px;
+}
+
+#comment {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  margin-left: 50px;
+  width: 1200px;
+}
+
+#title {
+  margin-left: 50px;
+}
+
+#no-listing {
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 50px;
+}

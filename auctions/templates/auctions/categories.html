@@ -1,0 +1,10 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2 id="title">Categories</h2>
+    <a href="{% url 'category' 'road' %}"><li id="title">Road Bike</li></a>
+    <a href="{% url 'category' 'mountain' %}"><li id="title">Mountain Bike</li></a>
+    <a href="{% url 'category' 'gravel' %}"><li id="title">Gravel Bike</li></a>
+    <a href="{% url 'category' 'fixie-singlespeed' %}"><li id="title">Fixie / Single-speed Bike</li></a>
+    
+{% endblock %}

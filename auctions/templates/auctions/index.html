@@ -1,0 +1,23 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2 id="title">Active Listings</h2>
+    
+    {% if empty %}
+        <div  id="no-listing">No listing available</div>
+    {% else %}
+        {% for product in products %}
+        <div>
+            <img id="image" class="card-img-top" src="{{product.link}}" alt="Card image cap">
+            <h4 id="product-title">{{ product.title }}</h4>
+            <h6 id="product-description">{{ product.description }}</h6>
+            <h6 id="product-price">${{ product.startBid }}</h6>
+            <h6 id="product-category">{{ product.category }}</h6>
+            <a href="{% url 'viewListing' product.id %}">Go >> </a>
+            <br>
+            <hr id="hr">
+        </div>
+        {% endfor %}
+    {% endif %}
+    
+{% endblock %}
