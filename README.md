@@ -18,8 +18,6 @@ This is a simple website for auction sales.
 ## Screenshots and Demo
   ![Screenshot from 2021-03-14 00-26-14](https://user-images.githubusercontent.com/56313500/111046690-de387900-845d-11eb-9c90-7c8963989f3e.png)
 ---
-  ![Screenshot from 2021-03-14 00-26-16](https://user-images.githubusercontent.com/56313500/111046766-e395c380-845d-11eb-9cda-87cf1ab69cd7.png)
----
   ![Screenshot from 2021-03-14 00-26-20](https://user-images.githubusercontent.com/56313500/111046828-e85a7780-845d-11eb-962d-a4e99162b808.png)
 ---
   ![Screenshot from 2021-03-14 00-26-26](https://user-images.githubusercontent.com/56313500/111046896-ed1f2b80-845d-11eb-80e0-a127901eedb9.png)
